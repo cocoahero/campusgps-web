@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title><%= page_title %></title>
-	<%= stylesheet_link_tag :all %>
+	<%= raw page_title %>
+	<%= stylesheet_link_tag "reset", "style", :cache => true %>
 	<%= javascript_include_tag "jquery.min" %>
 	<%= javascript_include_tag "jquery-ui.min" %>
 	<%= javascript_include_tag "rails" %>
