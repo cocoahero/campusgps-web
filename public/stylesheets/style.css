@@ -1,104 +1,97 @@
 html {
-<<<<<<< HEAD
 	font-family:Tahoma, Arial, sans-serif;
 	font-size:62.5%;
 }
 
 h1 {
 	font-size:60.0em;
-}
-=======
-  font-size:62.5%;
-  font-family:"CantarellRegular", "Calibri", serif;
+	font-size:62.5%;
+	font-family:"CantarellRegular", "Calibri", serif;
 }
 
 body {
-  text-align:center;
-  background:#336699 url('/images/bg-image.jpg') repeat-x top left;
-  -webkit-font-smoothing:antialiased;
+	text-align:center;
+	background:#336699 url('/images/bg-image.jpg') repeat-x top left;
+	-webkit-font-smoothing:antialiased;
 }
 
 /*
- * 
- * Global Header
- * 
- */
+* 
+* Global Header
+* 
+*/
 div#header {
-  width:560px;
-  height:147px;
-  margin:0 auto;
-  margin-top:50px;
-  padding:0px;
+	width:560px;
+	height:147px;
+	margin:0 auto;
+	margin-top:50px;
+	padding:0px;
 }
 
 div#header h1 {
-  float:left;
-  display:inline;
-  font-size:7.2em;
-  color:#FFF;
-  line-height:109px;
+	float:left;
+	display:inline;
+	font-size:7.2em;
+	color:#FFF;
+	line-height:109px;
 }
 
 div#header img#header-icon {
-  float:right;
-  display:inline;
-  border:none;
+	float:right;
+	display:inline;
+	border:none;
 }
 
 div#header h2 {
-  padding-top:15px;
-  clear:both;
-  font-size:2.4em;
-  color:#FFF;
-  font-weight:normal;
-  letter-spacing:0.0025em;
+	padding-top:15px;
+	clear:both;
+	font-size:2.4em;
+	color:#FFF;
+	font-weight:normal;
+	letter-spacing:0.0025em;
 }
 
 .text-shadow {
-  text-shadow:-1px 0px 2px #000000;
+	text-shadow:-1px 0px 2px #000000;
 }
 
 /*
- * 
- * Welcome Page Search Box
- * 
- */
+* 
+* Welcome Page Search Box
+* 
+*/
 
 div#main-search {
-  margin:0 auto;
-  margin-top:50px;
+	margin:0 auto;
+	margin-top:50px;
 }
 
 form#search-form {
-  width:762px;
-  height:51px;
-  background:transparent url('/images/search-box-large-bg.png') no-repeat top left;
-  margin:0 auto;
-  padding-top:7.5px;
+	width:762px;
+	height:51px;
+	background:transparent url('/images/search-box-large-bg.png') no-repeat top left;
+	margin:0 auto;
+	padding-top:7.5px;
 }
 
 input#search-box {
-  height:30px;
-  width:700px;
-  border:none;
-  color:#cccccc;
-  background-color:transparent;
-  font-size:2.2em;
-  line-height:25px;
-  margin-left:10px;
+	height:30px;
+	width:700px;
+	border:none;
+	color:#cccccc;
+	background-color:transparent;
+	font-size:2.2em;
+	line-height:25px;
+	margin-left:10px;
 }
 
 input#search-submit {
-  width:30px;
-  height:30px;
-  background:transparent url('/images/search-icon.png') no-repeat top left;
-  border:none;
-  font-size:0em;
-  margin-right:15px;
-  position:relative;
-  top:-5px;
+	width:30px;
+	height:30px;
+	background:transparent url('/images/search-icon.png') no-repeat top left;
+	border:none;
+	font-size:0em;
+	margin-right:15px;
+	position:relative;
+	top:-5px;
 }
-
-
-
->>>>>>> 73b8e29cbac3b455f6a85a95cd94fd6a9b2d41fc
