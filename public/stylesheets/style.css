@@ -71,7 +71,7 @@ form#search-form {
 	height:51px;
 	background:transparent url('/images/search-box-large-bg.png') no-repeat top left;
 	margin:0 auto;
-	padding-top:6.5px;
+	padding-top:9px;
 
 	/* CSS3 Inner Shadow Effect 
 	-webkit-box-shadow: 0 0px 10px #333333 inset, 0px 0px 2px #FFF;
