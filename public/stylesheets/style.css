@@ -102,22 +102,35 @@ input#search-submit {
 *
 */
 
-div#welcome-main-content {
+div#welcome-tile-wrapper {
 	width:800px;
-	min-height:250px;
 	margin:0 auto;
+	margin-top:50px;
 }
 
-div.tile {
-	width:50%;
-	height:250px;
-	float:left;
+div.welcome-tile {
+	width:230px;
 	text-align:left;
-	padding:5px;
+	overflow:visible;
+	display:inline-block;
+	padding:15px;
+	border-left:1px solid #cccccc;
 }
 
-div.tile h3.tile-title {
-	font-size:1.8em;
+div.welcome-tile:first-child {
+	border:none;
+}
+
+div.welcome-tile h3 {
+	font-size:2.0em;
+	color:#FFF;
+	margin-bottom:5px;
+}
+
+div.welcome-tile p {
+	color:#FFF;
+	font-size:1.4em;
+	line-height:1.2em;
 }
 
 br.clear {
