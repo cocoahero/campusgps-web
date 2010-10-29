@@ -95,3 +95,31 @@ input#search-submit {
 	position:relative;
 	top:-5px;
 }
+
+/*
+*
+*	Welcome Page Main Content
+*
+*/
+
+div#welcome-main-content {
+	width:800px;
+	min-height:250px;
+	margin:0 auto;
+}
+
+div.tile {
+	width:50%;
+	height:250px;
+	float:left;
+	text-align:left;
+	padding:5px;
+}
+
+div.tile h3.tile-title {
+	font-size:1.8em;
+}
+
+br.clear {
+	clear:both;
+}
