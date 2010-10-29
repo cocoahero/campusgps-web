@@ -74,11 +74,11 @@ form#search-form {
 	padding-top:6.5px;
 
 	/* CSS3 Inner Shadow Effect */
-	-webkit-box-shadow: 0 0px 10px #333333 inset;
-	-moz-box-shadow: 0 0px 10px #333333 inset;
+	-webkit-box-shadow: 0 0px 10px #333333 inset, 0px 0px 2px #FFF;
+	-moz-box-shadow: 0 0px 10px #333333 inset, 0px 0px 2px #FFF;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
-	/*border: 1px solid #cccccc;*/
+	border: 2px solid #666666;
 	background: #fff;
 }
 
