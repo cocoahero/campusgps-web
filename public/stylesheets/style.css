@@ -68,10 +68,23 @@ div#main-search {
 
 form#search-form {
 	width:762px;
-	height:51px;
-	background:transparent url('/images/search-box-large-bg.png') no-repeat top left;
+	height:41px;
+	/*background:transparent url('/images/search-box-large-bg.png') no-repeat top left;*/
 	margin:0 auto;
-	padding-top:7.5px;
+	padding-top:6.5px;
+
+	/* CSS3 Inner Shadow Effect */
+	-webkit-box-shadow: 0 0px 10px #333333 inset;
+	-moz-box-shadow: 0 0px 10px #333333 inset;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	/*border: 1px solid #cccccc;*/
+	background: #fff;
+}
+
+form#search-form label {
+	display:none;
+	visibility:hidden;
 }
 
 input#search-box {
@@ -90,7 +103,7 @@ input#search-submit {
 	height:30px;
 	background:transparent url('/images/search-icon.png') no-repeat top left;
 	border:none;
-	font-size:0em;
+	color:transparent;
 	margin-right:15px;
 	position:relative;
 	top:-5px;
