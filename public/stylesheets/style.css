@@ -68,18 +68,20 @@ div#main-search {
 
 form#search-form {
 	width:762px;
-	height:41px;
-	/*background:transparent url('/images/search-box-large-bg.png') no-repeat top left;*/
+	height:51px;
+	background:transparent url('/images/search-box-large-bg.png') no-repeat top left;
 	margin:0 auto;
 	padding-top:6.5px;
 
-	/* CSS3 Inner Shadow Effect */
+	/* CSS3 Inner Shadow Effect 
 	-webkit-box-shadow: 0 0px 10px #333333 inset, 0px 0px 2px #FFF;
 	-moz-box-shadow: 0 0px 10px #333333 inset, 0px 0px 2px #FFF;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
-	border: 2px solid #666666;
+	border: 2px solid rgba(0,0,0,0.50);
 	background: #fff;
+	height:41px;
+	*/
 }
 
 form#search-form label {
