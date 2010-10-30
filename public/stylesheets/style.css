@@ -56,6 +56,34 @@ div#header h2 {
 }
 
 /*
+ * 
+ * Global Content Styling
+ * 
+ */
+
+div.content-box {
+  width:950px;
+  padding:25px;
+  margin:0 auto;
+  margin-top:50px;
+  text-align:left;
+  background-color:#FFF;
+  
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  
+  -webkit-box-shadow: 0 0px 5px #999999 inset, 0px 0px 2px #FFF;
+  -moz-box-shadow: 0 0px 5px #999999 inset, 0px 0px 2px #FFF;
+}
+ 
+h3.content-box-title {
+  font-size:2.2em;
+  font-family:Tahoma, Arial, Sans-serif;
+  color:#336699;
+}
+
+/*
 * 
 * Welcome Page Search Box
 * 
@@ -147,6 +175,25 @@ div.welcome-tile p {
 	font-size:1.4em;
 	line-height:1.2em;
 }
+
+/*
+ * 
+ * Organization Styling
+ * 
+ */
+ 
+div#organization-table-wrapper {margin-top:25px;}
+
+div.organization-table-row {
+  padding:15px;
+  border-bottom:1px solid #cccccc;
+  color:#336699;
+}
+
+div.organization-table-row:first-child {border-top:2px solid #cccccc;}
+div.organization-table-row:hover {background-color:#65A4D0;color:#FFF;}
+
+span.organization-name {font-size:2.0em;}
 
 br.clear {
 	clear:both;

@@ -11,4 +11,4 @@ doc/
 *.tmproj
 Gemfile.lock
 .project
-tests/
+test/

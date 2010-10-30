@@ -1,0 +1,10 @@
+<div class="content-box">
+  <h3 class="content-box-title">List of Organizations</h3>
+  <div id="organization-table-wrapper">
+    <% @Organizations.each do |organization| %>
+    <div class="organization-table-row">
+      <span class="organization-name"><%= organization.name %></span>
+    </div>
+    <% end %>
+  </div>
+</div>
