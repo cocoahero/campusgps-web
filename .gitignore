@@ -4,11 +4,11 @@ log/*.log
 *.log
 tmp/**/*
 tmp/*
-doc/api
-doc/app
+doc/
 *.swp
 *~
 .DS_Store
 *.tmproj
 Gemfile.lock
 .project
+tests/
