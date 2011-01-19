@@ -10,14 +10,6 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101030015028) do
-
-  create_table "organizations", :force => true do |t|
-    t.string   "name"
-    t.date     "founded"
-    t.integer  "type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(:version => 0) do
 
 end

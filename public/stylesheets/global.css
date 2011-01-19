@@ -1,0 +1,92 @@
+html {
+	font-family:Tahoma, Arial, sans-serif;
+	font-size:62.5%;
+}
+
+h1 {
+	font-size:60.0em;
+	font-size:62.5%;
+	font-family:"CantarellRegular", "Calibri", serif;
+}
+
+body {
+	text-align:center;
+	background:#336699 url('/images/bg-image.jpg') repeat-x top left;
+	-webkit-font-smoothing:antialiased;
+}
+
+/*
+* 
+* Global Header
+* 
+*/
+div#header {
+	width:560px;
+	height:147px;
+	margin:0 auto;
+	margin-top:50px;
+	padding:0px;
+}
+
+div#header a {
+	text-decoration:none;
+}
+
+div#header h1 {
+	float:left;
+	display:inline;
+	font-size:7.2em;
+	color:#FFF;
+	line-height:109px;
+}
+
+div#header img#header-icon {
+	float:right;
+	display:inline;
+	border:none;
+}
+
+div#header h2 {
+	padding-top:15px;
+	clear:both;
+	font-size:2.4em;
+	color:#FFF;
+	font-weight:normal;
+	letter-spacing:0.0025em;
+}
+
+.text-shadow {
+	text-shadow:-1px 0px 2px #000000;
+}
+
+/*
+ * 
+ * Global Content Styling
+ * 
+ */
+
+div.content-box {
+  width:950px;
+  padding:25px;
+  margin:0 auto;
+  margin-top:50px;
+  text-align:left;
+  background-color:#FFF;
+  
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  border-radius:10px;
+  
+  -webkit-box-shadow: 0 0px 5px #999999 inset, 0px 0px 2px #FFF;
+  -moz-box-shadow: 0 0px 5px #999999 inset, 0px 0px 2px #FFF;
+}
+ 
+h3.content-box-title {
+  font-size:2.2em;
+  font-family:Tahoma, Arial, Sans-serif;
+  color:#336699;
+}
+
+br.clear {
+	clear:both;
+}

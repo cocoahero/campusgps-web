@@ -1,20 +1,15 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-	<%= raw page_title %>
-	<%= stylesheet_link_tag "reset", "fonts", "style" %>
-	<%= javascript_include_tag "jquery.min" %>
-	<%= javascript_include_tag "jquery-ui.min" %>
-	<%= javascript_include_tag "rails" %>
-	<%= javascript_include_tag "application" %>
-	<%= csrf_meta_tag %>
-</head>
-<body>
-	<div id="header">
-	  <a href="<%= root_path %>" alt="CampusGPS"><h1 class="text-shadow">CampusGPS</h1></a>
-	  <img id="header-icon" src="/images/map-icon.png" alt="CampusGPS" />
-	  <h2 class="text-shadow">Every campus map you could need, in one place.</h2>
-	</div>
-	<%= yield %>
-</body>
+	<head>
+		<title><%= page_title %></title>
+		<%= csrf_meta_tag %>
+		<%= render 'layouts/stylesheets' %>
+		<%= render 'layouts/javascript' %>
+	</head>
+	<body>
+		<%= render 'layouts/header' %>
+		<%= yield %>
+		<%= render 'layouts/footer' %>
+		<%= render 'layouts/google_analytics' if Rails.env.production? %>
+	</body>
 </html>

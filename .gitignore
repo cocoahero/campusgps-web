@@ -11,3 +11,4 @@ doc/
 *.tmproj
 .project
 test/
+*.tmproj
