@@ -1,92 +1,154 @@
-html {
-	font-family:Tahoma, Arial, sans-serif;
-	font-size:62.5%;
-}
+/**
+ *	
+ *	CSS Dependencies
+ *
+ */
 
-h1 {
-	font-size:60.0em;
-	font-size:62.5%;
-	font-family:"CantarellRegular", "Calibri", serif;
+@import url('reset.css');
+
+/**
+ *	
+ *	HTML Document Styling
+ *	
+ */
+
+html {
+	font-size: 62.5%;
 }
 
 body {
-	text-align:center;
-	background:#336699 url('/images/bg-image.jpg') repeat-x top left;
-	-webkit-font-smoothing:antialiased;
+	background: #336699 url('/images/bg-image.jpg') repeat-x top left;
+	margin-top: 25px;
 }
 
-/*
-* 
-* Global Header
-* 
-*/
-div#header {
-	width:560px;
-	height:147px;
+noscript {
+	width:750px;
 	margin:0 auto;
-	margin-top:50px;
-	padding:0px;
+	display:block;
+	color:red;
 }
 
-div#header a {
-	text-decoration:none;
+noscript div#noscript {
+	width:700px;
+	background-color:rgba(0,0,0,0.90);
+	position:absolute;
+	top:100px;
+	z-index:99;
+	text-align:center;
+	padding:25px;
 }
 
-div#header h1 {
-	float:left;
-	display:inline;
-	font-size:7.2em;
+noscript h5 {
+	font-size:3.8em;
+}
+
+noscript p {
+	margin-top:15px;
+	font-size:2.8em;
+}
+
+/**
+ *
+ *	Grid Layout
+ *  12 Columns; 20px Gutter; 960px Max Width
+ *
+ */
+
+.grid_1 { width:60px; }
+.grid_2 { width:140px; }
+.grid_3 { width:220px; }
+.grid_4 { width:300px; }
+.grid_5 { width:380px; }
+.grid_6 { width:460px; }
+.grid_7 { width:540px; }
+.grid_8 { width:620px; }
+.grid_9 { width:700px; }
+.grid_10 { width:780px; }
+.grid_11 { width:860px; }
+.grid_12 { width:940px; }
+
+.column { 
+	margin: 0 10px;
+	overflow: hidden;
+	float: left;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.row { 
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.row .row {
+	margin: 0 -10px;
+	width: auto;
+}
+
+/**
+ *
+ *	Header Styling
+ *
+ */
+
+div#header {
+	text-align: center;
 	color:#FFF;
-	line-height:109px;
-}
-
-div#header img#header-icon {
-	float:right;
-	display:inline;
-	border:none;
-}
-
-div#header h2 {
-	padding-top:15px;
-	clear:both;
-	font-size:2.4em;
-	color:#FFF;
-	font-weight:normal;
-	letter-spacing:0.0025em;
-}
-
-.text-shadow {
 	text-shadow:-1px 0px 2px #000000;
 }
 
-/*
- * 
- * Global Content Styling
- * 
+h1#site-name {
+	font-size: 7.2em;
+	display: inline;
+	vertical-align:middle;
+	position:relative;
+	top:15px;
+}
+
+h2#site-slogan {
+	font-size: 2.4em;
+	position:relative;
+	margin-top:15px;
+}
+
+img#site-logo {
+	width:124px;
+	height:109px;
+	margin-left: 15px;
+	vertical-align:middle;
+}
+
+/**
+ *	
+ *	Footer Styling
+ *
  */
 
-div.content-box {
-  width:950px;
-  padding:25px;
-  margin:0 auto;
-  margin-top:50px;
-  text-align:left;
-  background-color:#FFF;
-  
-  -webkit-border-radius:10px;
-  -moz-border-radius:10px;
-  border-radius:10px;
-  
-  -webkit-box-shadow: 0 0px 5px #999999 inset, 0px 0px 2px #FFF;
-  -moz-box-shadow: 0 0px 5px #999999 inset, 0px 0px 2px #FFF;
-}
- 
-h3.content-box-title {
-  font-size:2.2em;
-  font-family:Tahoma, Arial, Sans-serif;
-  color:#336699;
+div#footer {
+	text-align:center;
+	color:#FFF;
+	font-size:1.5em;
+	font-weight:normal;
+	margin-top:25px;
+	padding:15px;
 }
 
-br.clear {
-	clear:both;
+div#footer a {
+	text-decoration:none;
+	color:inherit;
+}
+
+div#footer a:hover { text-decoration:underline; }
+
+ul#footer-link-list {
+	list-style-type:none;
+}
+
+ul#footer-link-list li { 
+	display:inline;
+	padding:15px;
 }
