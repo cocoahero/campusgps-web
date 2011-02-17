@@ -1,10 +1,13 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title><%= page_title %></title>
+		<title><%= content_for?(:title) ? yield(:title) : site_name %></title>
 		<%= csrf_meta_tag %>
-		<%= render 'layouts/stylesheets' %>
-		<%= render 'layouts/javascript' %>
+		<%= stylesheet_link_tag "global" %>
+		<%= yield :stylesheets %>
+		<%= javascript_include_tag "jquery.min" %>
+		<%= javascript_include_tag "jquery-ui.min" %>
+		<%= javascript_include_tag "rails" %>
 	</head>
 	<body>
 		<%= render 'layouts/noscript' %>

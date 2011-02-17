@@ -7,17 +7,15 @@ module ApplicationHelper
   def site_slogan
     "Every campus map you could need, in one place."
   end
-  
-  # Helper function for dynamically creating the title for a page.
-  # If a @page_title instance variable is defined, it prepends it 
-  # to a base title (title_suffix).
-  def page_title
-    title_suffix = site_name
-    if @page_title.nil?
-      title_suffix
-    else
-      "#{@page_title} | #{title_suffix}"
+        
+  def title(aTitle)
+    content_for(:title) do
+        "#{aTitle} | #{site_name}"
     end
+  end
+  
+  def requires_stylesheets(*stylesheets)
+    content_for(:stylesheets) { stylesheet_link_tag stylesheets }
   end
   
 end

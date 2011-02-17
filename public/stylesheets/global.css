@@ -17,6 +17,7 @@ html {
 }
 
 body {
+	font-family: "Times New Roman";
 	background: #336699 url('/images/bg-image.jpg') repeat-x top left;
 	margin-top: 25px;
 }
