@@ -1,0 +1,11 @@
+<h1>Campuses</h1>
+
+<ol>
+<% @campuses.each do |campus| %>
+	<li><%= link_to campus.name, campus %></li>	
+<% end %>
+</ol>
+
+<hr>
+
+<%= link_to "New Campus", new_campus_path %>

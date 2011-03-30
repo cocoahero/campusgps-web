@@ -1,0 +1,16 @@
+<h2>New Campus</h2>
+
+<%= form_for(@campus) do |f| %>
+	<p>
+		<%= f.label :name %><br />
+		<%= f.text_field :name %>
+	</p>
+	
+	<p>
+		<%= f.label :description %><br />
+		<%= f.text_area :description %>
+	</p>
+	
+	<%= f.submit %>
+	
+<% end %>

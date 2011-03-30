@@ -1,0 +1,22 @@
+<h2><%= @campus.name %></h2>
+
+<div>
+	<%= @campus.description %>
+</div>
+
+<div>
+	<h3>Locations</h3>
+	
+	<ol>
+	<% @campus.locations.each do |location| %>
+		<li><%= link_to location.name, campus_location_path(@campus, location) %></li>
+	<% end %>
+	</ol>
+	
+	<%= link_to "Add Location", new_campus_location_path(@campus) %>
+</div>
+
+<hr>
+
+<%= link_to "Delete #{@campus.name}", @campus, :confirm => "Are you sure?", :method => :delete %>
+<%= link_to "Back to Campus Listing", campuses_path %>
