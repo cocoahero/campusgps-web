@@ -30,12 +30,16 @@
 					var myOptions = {
 						zoom: 16,
 						center: locations[0][0],
+						maxZoom: 18,
 						mapTypeId: google.maps.MapTypeId.HYBRID
 					};
 					
 					var map = new google.maps.Map(document.getElementById("campus-map"), myOptions);
+					var bounds = new google.maps.LatLngBounds ();
 					
 					for(var i = 0; i < locations.length; i++) {
+						bounds.extend(locations[i][0]);
+						
 						new google.maps.Marker({
 							position: locations[i][0],
 						    map: map,
@@ -44,6 +48,8 @@
 						    animation: google.maps.Animation.DROP
 						});
 					}
+					
+					map.fitBounds(bounds);
 				});
 			</script>
 		</div>
