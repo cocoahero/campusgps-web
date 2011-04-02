@@ -4,25 +4,25 @@
 <div id="page-welcome">
 	<div class="row">
 		<div class="column grid_12">
-			<form id="search-form">
+			<form id="search-form" method="get" action="<%= search_path %>">
 				<label for="search-query">Search:</label>
-				<input type="text" id="search-field" name="search-query" placeholder="Type a company, business, or other institution..."/>
+				<input type="text" id="search-field" name="q" placeholder="Type a university or college's name..."/>
 				<input type="submit" id="search-submit" value="Search" />
 			</form>
 		</div>
 	</div>
 	<div id="welcome-tiles" class="row">
 		<div class="column grid_4">
-			<h3>Tile Heading One</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+			<h3>Get Started!</h3>
+			<p>To find your campus, type it in the search box above. Or if you want to view all campuses, click <%= link_to "here", campuses_path %>.</p>
 		</div>
 		<div class="column grid_4">
-			<h3>Tile Heading Two</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+			<h3>Powered by You!</h3>
+			<p>All location data for a campus is provided by you the user!  Without you and your iOS device, CampusGPS wouldn't exist!</p>
 		</div>
 		<div class="column grid_4">
-			<h3>Tile Heading Three</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+			<h3>On the Go</h3>
+			<p>CampusGPS is also available for iOS! Use it when you are at a college that you are unfamiliar with. Get it today from the App Store for free!</p>
 		</div>
 	</div>
 </div>

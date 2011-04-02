@@ -1,0 +1,22 @@
+<% title "Search Results for \"#{@query}\"" %>
+<% requires_stylesheets "campuses-listing" %>
+
+<div class="row">
+	<div id="campuses" class="column grid_12">
+		<% if @campuses.nil? or @campuses.count == 0 %>
+		<h2 class="page-title">No Search Results for "<%= @query %>"</h2>
+		<% else %>
+		<h2 class="page-title">Search Results for "<%= @query %>"</h2>
+		<div class="row campus-list-item">
+			<div class="column grid_6 campus-list-header">Campus Name</div>
+			<div class="column grid_5 campus-list-header">Location</div>
+		</div>
+		<% @campuses.each do |campus| %>
+		<div class="row campus-list-item">
+			<div class="column grid_6"><%= link_to campus.name, campus %></div>
+			<div class="column grid_5"><span class="campus-description"><%= campus.description %></span></div>
+		</div>
+		<% end %>
+		<% end %>
+	</div>
+</div>

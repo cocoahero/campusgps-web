@@ -58,3 +58,7 @@ input#search-submit {
 	position:relative;
 	top:-5px;
 }
+
+a {
+	color:inherit;
+}
