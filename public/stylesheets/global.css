@@ -102,6 +102,11 @@ div#header {
 	text-shadow:-1px 0px 2px #000000;
 }
 
+div#header a {
+	color:inherit;
+	text-decoration:none;
+}
+
 h1#site-name {
 	font-size: 7.2em;
 	display: inline;

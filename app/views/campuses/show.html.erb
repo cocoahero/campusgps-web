@@ -1,22 +1,51 @@
-<h2><%= @campus.name %></h2>
+<% title @campus.name %>
+<% requires_stylesheets "campus-details" %>
 
-<div>
-	<%= @campus.description %>
+<div class="row">
+	<div id="campus" class="column grid_12">
+		<h2 class="campus-name"><%= @campus.name %></h2>
+		<div class="row">
+			<div class="column grid_5">
+				<!--<h4 id="locations-heading">Campus Locations</h4>-->
+				<ol id="locations-list">
+					<% @campus.locations.each do |location| %>
+						<li>
+							<div class="location-detail">
+								<span class="location-name"><%= location.name %></span>
+								<span class="location-description"><%= location.description %></span>
+							</div>
+						</li>
+					<% end %>
+				</ol>
+			</div>
+			<div id="campus-map" class="column grid_6"></div>
+			<script type="text/javascript">
+				$(function() {
+					var locations = [
+						<% @campus.locations.each do |location| %>
+						new Array(new google.maps.LatLng(<%= location.latitude %>, <%= location.longitude %>), '<%= location.name %>'),
+						<% end %>
+					];
+
+					var myOptions = {
+						zoom: 16,
+						center: locations[0][0],
+						mapTypeId: google.maps.MapTypeId.HYBRID
+					};
+					
+					var map = new google.maps.Map(document.getElementById("campus-map"), myOptions);
+					
+					for(var i = 0; i < locations.length; i++) {
+						new google.maps.Marker({
+							position: locations[i][0],
+						    map: map,
+						    draggable: false,
+							title: locations[i][1],
+						    animation: google.maps.Animation.DROP
+						});
+					}
+				});
+			</script>
+		</div>
+	</div>
 </div>
-
-<div>
-	<h3>Locations</h3>
-	
-	<ol>
-	<% @campus.locations.each do |location| %>
-		<li><%= link_to location.name, campus_location_path(@campus, location) %></li>
-	<% end %>
-	</ol>
-	
-	<%= link_to "Add Location", new_campus_location_path(@campus) %>
-</div>
-
-<hr>
-
-<%= link_to "Delete #{@campus.name}", @campus, :confirm => "Are you sure?", :method => :delete %>
-<%= link_to "Back to Campus Listing", campuses_path %>

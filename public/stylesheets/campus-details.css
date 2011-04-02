@@ -1,0 +1,42 @@
+div#campus {
+	margin-top:25px;
+	padding:15px;
+	
+	text-shadow:-1px 0px 2px #000;
+	color:#FFF;
+}
+
+h2.campus-name {
+	font-size:30px;
+	font-weight:bold;
+	margin-bottom:15px;
+}
+
+h3.campus-description {
+	font-size:24px;
+	font-weight:normal;
+	margin-bottom:15px;
+}
+
+h4#locations-heading {
+	font-size:22px;
+	font-weight:bold;
+	margin-bottom:15px;
+}
+
+span.location-name {
+	font-size:18px;
+	font-weight:bold;
+	padding:5px 0px;
+	display:block;
+}
+
+span.location-description {
+	font-size:16px;
+	display:block;
+}
+
+div#campus-map {
+	height:400px;
+	text-shadow:none;
+}

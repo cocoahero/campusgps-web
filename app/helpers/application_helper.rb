@@ -18,4 +18,8 @@ module ApplicationHelper
     content_for(:stylesheets) { stylesheet_link_tag stylesheets }
   end
   
+  def requires_javascript(*javascripts)
+    content_for(:javascripts) { javascript_include_tag javascripts }
+  end
+  
 end
