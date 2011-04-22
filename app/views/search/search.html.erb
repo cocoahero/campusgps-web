@@ -14,7 +14,7 @@
 		<% @campuses.each do |campus| %>
 		<div class="row campus-list-item">
 			<div class="column grid_6"><%= link_to campus.name, campus %></div>
-			<div class="column grid_5"><span class="campus-description"><%= campus.description %></span></div>
+			<div class="column grid_5"><span class="campus-description"><%= campus.location %></span></div>
 		</div>
 		<% end %>
 		<% end %>

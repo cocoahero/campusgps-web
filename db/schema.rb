@@ -14,6 +14,8 @@ ActiveRecord::Schema.define(:version => 20110323205441) do
 
   create_table "campuses", :force => true do |t|
     t.string   "name"
+    t.string   "location"
+    t.string   "website"
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
